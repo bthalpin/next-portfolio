@@ -1,6 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background:#bec9d6;
+  --dark: #152f52;
+  --dark-alt: #3a3c3e;
+  --highlight: #2a61a8;
+  --highlight-fade: #4179e2f8;
+  --font: #e0fbfc;
+  --max-width: 1920px;
+  --min-height: calc(100vh - 128px)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +41,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.main {
+
 }
 
 @media (prefers-color-scheme: dark) {

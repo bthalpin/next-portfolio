@@ -1,0 +1,19 @@
+.footer{
+    background-color: var(--dark);
+    padding:0.5rem 0.5rem 1rem;
+    /* position:absolute; */
+    bottom:0;
+    width:100%;
+    max-width: var(--max-width);
+    border-top:2px solid var(--highlight);
+}
+.footerContainer{
+    margin:auto;
+    width:60%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.githubLogo,.linkedInLogo,.emailLink{
+    height:40px;
+}
