@@ -23,7 +23,7 @@ const Header: React.FC<Props> = () => {
     }
 
     return (
-        <div>
+        <div className={styles.navWrapper}>
             <div  className={styles.navContainer}>
                 <Link href={'/'} className={styles.navName}>
                     

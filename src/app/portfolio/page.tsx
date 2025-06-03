@@ -1,7 +1,4 @@
-'use client'
-
-import React, { useRef } from 'react';
-import { useDraggable } from "react-use-draggable-scroll";
+import React from 'react';
 
 import Project from '@/components/Project/Project';
 import { projectData } from '@/components/Project/projectData';
@@ -12,22 +9,17 @@ interface ProjectData {
     name:string;
     deployed:string;
     github:string;
-    class:string;
+    // class:string;
     shortDescription:string;
     summary:string;
     technology:string;
     disclaimer:string;
+    image: string;
 }
 const Portfolio = () => {
-    const projectRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLInputElement>
-    const { events } = useDraggable(projectRef, {
-        applyRubberBandEffect: true
-    })
     // Returns each project in the projectData.js
     return (
-        <div className={styles.projectContainer} 
-        {...events} 
-        ref={projectRef}>
+        <div className={styles.projectContainer} >
             {projectData.map((projectInfo:ProjectData,index:number)=>
                 <div key={index}>
                     <Project projectInfo={projectInfo} id={index}/>

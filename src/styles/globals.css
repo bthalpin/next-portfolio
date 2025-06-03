@@ -1,20 +1,25 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2b2b2b;
   --background:#bec9d6;
   --dark: #152f52;
   --dark-alt: #3a3c3e;
-  --highlight: #2a61a8;
+  --highlight: #2682fc;
+  --highlight-shadow: #1244855b;
   --highlight-fade: #4179e2f8;
   --font: #e0fbfc;
   --max-width: 1920px;
-  --min-height: calc(100vh - 128px)
+  --min-height: calc(100vh - 128px);
+  --card-shadow: .5rem .5rem .5rem #0000004f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #030b18;
+    --foreground: #f3f3f3;
+  --dark: #0b2f61;
+  --highlight: #0e70f1;
+  --highlight-shadow: #2682fc;
+  --highlight-fade: #254277f8;
   }
 }
 
@@ -27,7 +32,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -44,7 +49,9 @@ a {
 }
 
 .main {
-
+  max-width: var(--max-width);
+  margin: auto;
+  min-height: var(--min-height);
 }
 
 @media (prefers-color-scheme: dark) {
