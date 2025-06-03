@@ -1,7 +1,14 @@
-.resumePage{
+.resumePage {
     animation:resumePage 0.4s;
     min-height: var(--min-height);
-    padding-top: 2rem;
+    padding: 2rem 5rem;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 20rem 1fr;
+    max-width: calc(var(--max-width) - 10rem);
+    gap: 5rem;
+    margin: auto;
+    width: fit-content;
 }
 @keyframes resumePage {
     0%{
@@ -11,43 +18,54 @@
 }
 /* Resume card */
 .resumeContainer{
-    margin:auto;
-    width:40vw;
+    width: 20rem;
     padding:0.5rem;
-    background-color: #dbdbdb;
-    border-top:2px solid #ecebeb;
-    border-left:2px solid #ecebeb;
-    border-bottom:2px solid #c2c2c2;
-    border-right:2px solid #c2c2c2;
-    box-shadow: 0.2rem 0.2rem 0.5rem #a1a1a1;
+    background-color: var(--dark);
+    border: 2px inset var(--highlight);
+    box-shadow: var(--card-shadow);
     border-radius: 0.5rem;
-    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     display:flex;
     justify-content: center;
+}
 
+.resumeImage {
+    position: relative;
+    overflow: hidden;
 }
-.resumeContainer:hover{
-    box-shadow: 0rem 0rem 2rem var(--highlight);
-    background-color: #eeeded;
+.resumeContainer img {
+    width: 18rem;
+    position: relative;
 }
-.resumeContainer img{
-    margin-top:0.5rem;
-    width:38vw;
-    border:1px solid #a8a7a7;
+.resumeImage::after {
+    transition: all 0.2s ease-in-out;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #00000021;
+    z-index: 1000;
 }
-.resumeLink{
-    color:#2b2b2b;
+.resumeContainer:hover .resumeImage::after {
+    background-color: transparent;
+}
+.resumeLink {
+    color: #fff;
     text-align: center;
     font-weight:400;
     text-decoration: none;
+}
+
+.resumeLink p {
+    margin-bottom: 0.75rem;
 }
 
 /* Skills */
 .skillContainer{
     display:flex;
     justify-content: space-around;
-    width:52vw;
-    margin:0 auto 7rem;
+    /* width: 70rem; */
+    /* width:52vw;
+    margin:0 auto 7rem; */
 }
 .skills{
     /* width:29vw; */
@@ -60,18 +78,16 @@
     /* border:2px solid #f48023; */
     /* text-align: center; */
 }
-.skills *{
-    color:#3c4554;
-    
-}
 .skills h2{
     font-weight:500;
     animation:skill 1s;
+    color:var(--highlight);
 }
 .skills li{
     list-style-type:none;
     padding:0.2rem;
     font-weight: 400;
+    color:var(--foreground);
     /* animation:skill 1s; */
 
 }
@@ -97,7 +113,35 @@
    
 } */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
+    .resumePage {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+        padding: 1rem;
+    }
+    .skillContainer {
+        max-width: 30rem;
+        margin: auto;
+    }
+    .skillContainer h2{
+        text-align: center;
+    }
+    .resumeContainer {
+        width: 95%;
+        max-width: 20rem;
+        padding: 1rem;
+    }
+    .resumeLink, .resumeImage img {
+        width: 100%;
+        max-width: 95vw;
+        height: auto;
+        aspect-ratio: 8 / 11;
+       /* width: calc(100% - 2rem); */
+    }
+}
+
+/* @media screen and (max-width:1000px) {
     .resumeContainer{
         width:80vw;
     }
@@ -111,7 +155,7 @@
     .skillContainer{
         width:80vw;
     }
-}
+} */
 /* @media screen and (max-width:800px) {
     .skillContainer{
         width:90vw;
@@ -120,7 +164,7 @@
         width:43vw;
     }
 } */
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .resumePage{
         animation:resumePage 0.2s;
     }
@@ -145,11 +189,4 @@
         margin-top:1rem;
         box-shadow: 0rem 0.1rem 0.1rem #919191 inset;
     }
-    .resumeBackground{
-        /* box-shadow:0rem 0.1rem 0.1rem #919191 inset;
-        border-right:none;
-        border-left:none;
-        width:100vw;
-        margin:1rem 0; */
-    }
-}
+} */

@@ -1,11 +1,16 @@
+.navWrapper {
+    background-color: var(--dark);
+    border-bottom:1px solid var(--highlight);
+}
 .navContainer {
     display:flex;
     justify-content: space-between;
-    background-color: var(--dark);
     color:rgb(214, 214, 214);
-    border-bottom:1px solid var(--highlight);
     padding-left:1.4rem;
     height: 61px;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
 }
 .navLinkContainer, .navLinkOpen {
     display:flex;
@@ -22,7 +27,7 @@
 }
 .navLink {
     display: block;
-    padding:1.3rem;
+    padding:1.25rem;
     text-decoration: none;
     color:white;
     cursor: pointer;
