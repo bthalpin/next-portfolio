@@ -2,8 +2,14 @@
 .projectContainer{
     padding: 20px;
     min-height: calc(var(--min-height) + 25px);
+    animation: pageChange 0.2s;
 }
 
+@keyframes pageChange {
+    0%{
+        opacity:0;
+    }
+}
 .projectCard {
     text-align: center;
     border-radius:0.2rem;

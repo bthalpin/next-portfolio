@@ -2,6 +2,7 @@
     padding:3rem;
     
     /* animation:aboutPage 0.4s; */
+    animation: pageChange 0.5s;
     min-height: var(--min-height);
     max-width: calc(var(--max-width) - 10rem);
     margin: auto;
@@ -10,6 +11,11 @@
     0%{
         opacity:0;
         transform:translate(-100%);
+    }
+}
+@keyframes pageChange {
+    0%{
+        opacity:0;
     }
 }
 .portraitContainer {
