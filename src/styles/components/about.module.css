@@ -77,7 +77,7 @@
 }
 @media screen and (max-width:400px) {
     .aboutContainer{
-        animation:aboutPage 0.2s;
+        /* animation:aboutPage 0.2s; */
 
         padding: 1.5rem 0.8rem;
     }
