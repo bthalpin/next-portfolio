@@ -35,14 +35,14 @@ function ProjectDetails (props: Props) {
                         <div className={styles.projectBtnContainer}>
                             {projectData[numId].deployed ?
                                 <div>
-                                    <a href={projectData[numId].deployed} target={'_blank'} className={styles.projectBtn}>Demo</a>
+                                    <a href={projectData[numId].deployed} target={'_blank'} className={styles.projectBtn}>Live Demo</a>
                                 </div>
                             :
                                 null
                             }
 
                             <div>
-                                <a href={projectData[numId].github} target={'_blank'} className={styles.projectBtn}>Code</a>
+                                <a href={projectData[numId].github} target={'_blank'} className={styles.projectBtn}>View Code</a>
                             </div>
                         </div>
                     </div>

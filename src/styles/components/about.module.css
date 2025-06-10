@@ -1,7 +1,7 @@
 .aboutContainer{
     padding:3rem;
     
-    animation:aboutPage 0.4s;
+    /* animation:aboutPage 0.4s; */
     min-height: var(--min-height);
     max-width: calc(var(--max-width) - 10rem);
     margin: auto;
