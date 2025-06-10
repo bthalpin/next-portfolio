@@ -7,7 +7,7 @@ function About () {
         <div className={styles.aboutContainer}>
             <div className={styles.portraitContainer}>
                 <div className={styles.portrait}>
-                    <img src='/images/Brian-portrait-no-background.png' alt="Brian Halpin portrait"></img>
+                    <img src='/images/brian-main-portrait.png' alt="Brian Halpin portrait"></img>
                 </div>
                 
             </div>
