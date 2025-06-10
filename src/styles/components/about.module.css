@@ -15,18 +15,24 @@
 .portraitContainer {
     float: left;
     margin-right: 2rem;
+    /* background-color: var(--highlight); */
+    background: radial-gradient(closest-side, var(--portrait-background), var(--portrait-background), var(--background));
+    /* opacity: 0.1; */
+    /* border-radius: 50%;
+    overflow: hidden; */
 }
 .portrait img{
-    border: 0.1vw solid #353535;
+    /* border: 0.1vw solid #353535; */
     width:17rem;
+    border-radius: 50%;
 }
 
 #name{
-
+    font-weight: 500;
+    /* font-style:italic; */
     font-size: 2.5rem;
     margin-top: -1.5rem;
     color: var(--highlight);
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 .statement{
     font-size: 1.5rem;
