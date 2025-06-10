@@ -15,7 +15,10 @@ function About () {
                     <p className={styles.statement}>Hi, I'm</p> 
                     <p id={styles.name}>Brian Halpin</p> 
                     <p className={styles.statement}>
-                        I am a full stack software developer specializing in MERN stack.  
+                        I am a full stack software developer specializing in Next.js, TypeScript, Prisma, and Sequelize.
+                        I have extensive experience working with Next.js and React using both JavaScript and TypeScript.
+                    </p>
+                    <p className={styles.statement}>
                         Since the moment I was exposed to programming, it was all I ever wanted to do.  
                         I have always had a passion for problem solving, but thought my love of logic 
                         puzzles would be something I would only ever do as a hobby. Software development 

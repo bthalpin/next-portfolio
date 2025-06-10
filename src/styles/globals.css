@@ -10,6 +10,7 @@
   --max-width: 1920px;
   --min-height: calc(100vh - 128px);
   --card-shadow: .5rem .5rem .5rem #0000004f;
+  --portrait-background: #5e77a5b9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +21,8 @@
   --highlight: #3587f3;
   --highlight-shadow: #2682fc;
   --highlight-fade: #254277f8;
+  --portrait-background: #6f97eed0;
+  /* --portrait-background: #4c77ee; */
   }
 }
 
