@@ -29,7 +29,7 @@ export default function SimpleGame ({ playerName } : { playerName: string }) {
     const fontFamily = `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;`
     return (
         <div style={{ backgroundColor: color, margin: 0, padding: 0, position: 'fixed', inset: 0}}>
-            <div style={{ position: 'absolute', left: `${position.x}%`, top: `${position.y}%`, display: 'flex', justifyContent: 'center', flexDirection: 'column', gap: '5px', background: '#afcce4', padding: '20px', borderRadius: '5px', boxShadow: '5px 5px 5px #00000073' }}>
+            <div style={{ position: 'absolute', left: `${position.x}vw`, top: `${position.y}vw`, display: 'flex', justifyContent: 'center', flexDirection: 'column', gap: '5px', background: '#afcce4', padding: '20px', borderRadius: '5px', boxShadow: '5px 5px 5px #00000073' }}>
                 <p style={{margin: 0,fontSize: '20px', fontWeight: 500, fontFamily, textAlign: 'center' }}>PLAYER {playerName.toUpperCase()}</p>
                 <p style={{margin: 0,fontSize: '20px', fontWeight: 500, fontFamily, textAlign: 'center'}}>TOTAL CLICKS {clickCount}</p>
                 <button onClick={() => setClickCount(prevCount => prevCount + 1)} style={{ fontSize: '20px', fontFamily, fontWeight: 500, borderRadius: '5px', cursor: 'pointer'}}>CLICK ME</button>
