@@ -25,23 +25,26 @@
     width: fit-content;
     max-width: 70rem;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     overflow: hidden;
+
+    background-color: var(--card-background);
 }
 .projectCard img, .projectDetailContainer img {
     border-radius: 0.25rem;
-    box-shadow: var(--card-shadow);
+    border: 2px solid var(--background);
+    /* box-shadow: var(--card-shadow);
     transition: box-shadow 0.3s ease-out;
-    box-shadow: 0 0 0.5rem var(--highlight-shadow);
+    box-shadow: 0 0 0.5rem var(--highlight-shadow); */
 }
-.projectCard img:hover {
+/* .projectCard img:hover {
     box-shadow: 0 0 1.25rem var(--highlight-shadow);
     scale: 1.005;
 }
 .projectCard img:hover img {
     width:150%;
     height:150%;
-}
+} */
 .alternateCard {    
     grid-template-columns: 300px 500px;
 
@@ -110,7 +113,7 @@
     margin: 2rem 0 1rem;
 }
 .projectBtn {
-    background-color: var(--highlight);
+    background-color: var(--highlight-shadow);
     width: 10rem;
     display: block;
     font-size: 1.5rem;
@@ -307,6 +310,7 @@
     .projectCard, .alternateCard {
         grid-template-columns: 1fr;
         max-width: 100%;
+        width: 100%;
     }
     .projectCard > section, .alternateCard > section {
         order:2;
@@ -316,6 +320,7 @@
         max-width: 100%;
         aspect-ratio: 500 / 350;
         height: auto;
+        margin: auto;
     }
 }
 
