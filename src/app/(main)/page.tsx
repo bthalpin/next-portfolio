@@ -15,6 +15,22 @@ function About () {
                     <p className={styles.statement}>Hi, I'm</p> 
                     <p id={styles.name}>Brian Halpin</p> 
                     <p className={styles.statement}>
+                        I’m a full-stack web developer specializing in building and maintaining scalable production applications using Next.js, TypeScript, MySQL, and modern cloud infrastructure. I’ve worked across multiple full-featured platforms, contributing both independently and within collaborative teams to deliver reliable, high-quality web applications.
+                    </p>
+                    <p className={styles.statement}>
+                        Most recently, I’ve taken on a Lead Developer role overseeing code quality and production infrastructure across several active projects. I manage and deploy production applications through Vercel, maintain and optimize databases on PlanetScale, and oversee cloud infrastructure including AWS EC2 and S3. I also manage development and staging environments on Heroku and conduct code reviews to ensure consistency, performance, and long-term maintainability across codebases.
+                    </p>    
+                    <p className={styles.statement}>
+                        My experience spans both maintaining complex legacy systems and building new applications from the ground up. I’ve developed custom content management systems, led the development of content-driven websites and admin dashboards, and helped guide projects from planning through deployment and ongoing support.  
+                    </p>    
+                    <p className={styles.statement}>
+                        I’m driven by a strong interest in problem solving, system design, and continuous improvement. I enjoy tackling complex technical challenges, refining existing systems, and building tools that make both products and teams more effective.
+
+                    </p>    
+                    <p className={styles.statement}>
+I earned a Full Stack Web Development certificate from Rutgers University in 2022 and have continued expanding my skill set through hands-on development across modern frameworks, databases, and cloud platforms. Today, I focus on delivering dependable, scalable applications and contributing meaningful technical leadership wherever I work.
+                    </p>    
+                    {/* <p className={styles.statement}>
                         I'm a web developer, with years of professional experience, specializing in building and maintaining 
                         full-stack applications using Next.js, TypeScript, and MySQL with Prisma and Sequelize. I've worked 
                         both independently and as part of a collaborative team, contributing to the development of multiple 
@@ -45,7 +61,7 @@ function About () {
                         My love of problem solving, my drive to always improve, and my strong collaborative 
                         skills make me an advantageous candidate for any team.
 
-                    </p>    
+                    </p>     */}
 
                 </section>
         </div>
@@ -53,3 +69,5 @@ function About () {
 }
 
 export default About;
+
+
