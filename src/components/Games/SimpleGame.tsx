@@ -30,6 +30,12 @@ export default function SimpleGame ({ playerName } : { playerName: string }) {
 
         if (savedScore) {
             setHighScore(+savedScore)
+        } else {
+            const savedSessionScore = sessionStorage.getItem(`${playerName}-high-score`)
+
+            if (savedSessionScore) {
+                setHighScore(+savedSessionScore)
+            } 
         }
     }
 
@@ -49,6 +55,7 @@ export default function SimpleGame ({ playerName } : { playerName: string }) {
                     const newHighScore = prevScore > prevCount ? prevScore : prevCount
 
                     localStorage.setItem(`${playerName}-high-score`, `${newHighScore}`)
+                    sessionStorage.setItem(`${playerName}-high-score`, `${newHighScore}`)
                     return newHighScore
                 })
                 return 0
