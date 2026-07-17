@@ -14,7 +14,7 @@ const Footer = () => {
                     <img className={styles.linkedInLogo} src="/images/linkedin-logo.png" alt="LinkedIn Logo"></img> 
                 </a>
                 <a href="mailto:brian.t.halpin@gmail.com">
-                    <img className={styles.emailLink} src="/images/mail.png" alt="Email icon"></img> 
+                    <img className={styles.emailLink} src="/icons/mail_icon.png" alt="Email icon"></img> 
                 </a>
             </div>
         </div>
