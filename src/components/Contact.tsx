@@ -24,11 +24,12 @@ export default function Contact ({ open, setOpen }: Props) {
     const allowScroll = () => {
         setTimeout(() => {
             document.body.style.overflowY = 'unset'
+            console.log('SHOOW')
         }, 300)
     }
 
     useEffect(() => {
-        if (open) {
+        if (open) {console.log('HIDE')
             document.body.style.overflowY = 'hidden'
         } else {
             allowScroll()

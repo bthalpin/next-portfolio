@@ -1,19 +1,14 @@
 'use client'
-import { useState } from "react";
-import Contact from "./Contact";
-import styles from '@/styles/about.module.css';
+
+import { useContactContext } from "@/contexts/ContactProvider";
+import { IoChatboxOutline } from "react-icons/io5";
 
 export default function ContactWrapper () {
-    const [open, setOpen] = useState(false);
+    const { setOpen } = useContactContext();
     return (
-        <>
-            <div onClick={() => setOpen(true)}>
-                <img className={styles.githubLogo} src="/icons/chat_icon.png" alt="GitHub Logo"></img> 
-
-                <p>Let's Connect!</p>
-            </div>
-
-            <Contact open={open} setOpen={setOpen}/>
-        </>
+        <div onClick={() => setOpen(true)}>
+            <IoChatboxOutline />
+            <p>Let's Connect!</p>
+        </div>
     )
 }
