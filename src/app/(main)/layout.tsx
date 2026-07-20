@@ -25,7 +25,7 @@ export default function RootLayout({
 				<link rel="manifest" href="/manifest.json" />
 			
 			</head>
-			<body >
+			<body className={'page_container'} >
 				<ContactProvider>
 					<Header />
 					<div className={'main'}>

@@ -6,6 +6,7 @@ import TechnicalSkills from '@/components/About/TechnicalSKills';
 import Career from '@/components/About/Career';
 
 import styles from '@/styles/about.module.css';
+import FeaturedWork from '@/components/About/FeaturedWork';
 
 export default function Page () {
     return (
@@ -16,6 +17,7 @@ export default function Page () {
             </section>
 
             <Highlights />
+            <FeaturedWork />
             <TechnicalSkills />
             <Career />
         </div>

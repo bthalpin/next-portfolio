@@ -68,7 +68,7 @@ const skillData = [
         header: 'Cloud/DevOps',
         icon: <CiCloudOn />,
         skills: [
-            'AWS (EC2, S3, RDS, IAM)',
+            'AWS',
             'Vercel',
             'Linux',
             'Git & GitHub',
