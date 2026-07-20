@@ -1,19 +1,73 @@
 .footer{
     background-color: var(--dark);
-    padding:0.5rem 0.5rem 1rem;
+    padding: 1rem 1.5rem 1.5rem;
     /* position:absolute; */
     bottom:0;
     width:100%;
     border-top:2px solid var(--highlight);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    flex: 1;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 100%;
+    gap: 4rem;
 }
 .footerContainer{
-    max-width: 60rem;
-    margin:auto;
-    width:60%;
+    /* max-width: 60rem; */
+    /* margin:auto; */
+    /* width:60%; */
     display:flex;
-    justify-content: space-around;
+    gap: 3rem;
     align-items: center;
 }
-.githubLogo,.linkedInLogo,.emailLink{
+
+.footer_contact h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.footer_contact h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.githubLogo,.linkedInLogo,.emailLink svg{
     height:40px;
+    filter: grayscale(1);
+}
+
+.emailLink svg {
+    width: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer_container {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .footer_contact {
+        align-items: center;
+        text-align: center;
+    }
+    .footer_contact h3 {
+        border-bottom: 1px solid #ffffff1e;
+        width: 100%;
+        padding-bottom: 0.75rem;
+    }
+    .githubLogo,.linkedInLogo,.emailLink svg{
+        height: 30px;
+        filter: grayscale(1);
+    }
 }

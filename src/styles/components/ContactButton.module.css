@@ -1,0 +1,24 @@
+.contact_button {
+    bottom: 20px;
+    border: 2px solid var(--highlight);
+    background-color:  var(--highlight);
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 40px;
+    width: fit-content;
+    transition: all 0.2s ease-in-out;
+    margin: 1rem 0;
+}
+.contact_button:disabled {
+    opacity: 0.7;
+}
+.contact_button:hover {
+    background-color: var(--highlight-bright);
+    border-color: var(--highlight-bright);
+    /* color: var(--highlight) !important; */
+}
