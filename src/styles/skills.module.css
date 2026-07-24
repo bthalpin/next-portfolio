@@ -1,0 +1,80 @@
+.skills_page {
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+.skills_header_section {
+    display: grid;
+    grid-template-columns: 1fr 25rem;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.skills_header_section > div:first-child, .skills_info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skills_header_section > div:first-child > p:nth-child(3) {
+    max-width: 18rem;
+}
+
+.skills_header {
+    font-weight: 500;
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills_sub_header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--highlight);
+}
+
+.skills_info {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1.5rem;
+
+    background-color: var(--card-background);
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 3rem;
+}
+.career_icon_container {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--highlight-fade);
+    padding: 0.5rem;
+}
+.skills_info svg {
+    color: var(--highlight);
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .skills_page {
+        padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skills_page {
+        padding: 1rem;
+    }
+    .skills_header_section {
+        grid-template-columns: 1fr;
+    }
+    .skills_info {
+        display: none;
+    }
+}

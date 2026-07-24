@@ -9,7 +9,8 @@
     --highlight-shadow: #2752a8;
     --highlight-fade: #244a7cf8;
     --portrait-background: #4f535fd0;
-    --card-background: #222e3f;
+    --card-background: #19222e;
+    /* --card-background: #222e3f; */
     --font: #e0fbfc;
     --max-width: 1920px;
     --min-height: calc(100vh - 310px);
