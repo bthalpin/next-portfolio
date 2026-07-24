@@ -1,0 +1,124 @@
+.skill_section {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.skill_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border: 1px solid var(--portrait-background);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+}   
+
+.skill_section_header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skill_section_header h4 {
+    color: var(--highlight);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.skill_section_header svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--highlight);
+}
+
+.skill_row svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--highlight);
+}
+
+.skill_row {
+    padding: 1rem;
+    background-color: var(--card-background);
+
+    display: grid;
+    grid-template-columns: 3.5rem 20rem 4rem 8rem 8rem 1fr;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.skill_name {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.skill_frequency, .skill_years, .skill_environment {
+    border: 1px solid transparent;
+    font-weight: 500;
+
+    text-align: center;
+    padding: 0.4rem 0;
+    border-radius: 0.5rem;
+}
+
+.skill_frequency {
+    border-color: #abf0ab79;
+    color: #abf0ab;
+    background-color: #1a271acc;
+}
+
+.skill_years {
+    border-color:  #3b83f6b2;
+    color: #99bbf3;
+    background-color: #0e1e38c9;
+}
+
+.skill_environment {
+    border-color:  #6546f08f;
+    color: #ccc2f7;
+    background-color: #140c358e;
+}
+
+@media screen and (max-width: 1200px) {
+    .skill_row {
+        grid-template-columns: 3.5rem 3.5fr 4rem 8rem 8rem 4fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skill_row {
+        grid-template-columns: 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr;
+    }
+    .skill_name {
+        grid-column: 2 /-1;
+    }
+    
+    .skill_frequency, .skill_years, .skill_environment {
+        grid-column: span 2;
+    }
+    .skill_description {
+        grid-column: 1 / -1;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skill_row {
+        grid-template-columns: 3.5rem 1fr;
+    }
+    .skill_name {
+        grid-column: 2;
+    } 
+    
+    .skill_frequency, .skill_years, .skill_environment, .skill_description {
+        grid-column: 1 / -1;
+        /* text-align: center; */
+    }
+    .skill_description {
+        padding: 0 1rem;
+    }
+}
