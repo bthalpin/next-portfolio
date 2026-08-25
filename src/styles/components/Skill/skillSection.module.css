@@ -67,7 +67,7 @@
 
 .skill_frequency {
     border-color: #abf0ab79;
-    color: #abf0ab;
+    color: var(--highlight-green);
     background-color: #1a271acc;
 }
 

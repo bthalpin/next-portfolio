@@ -4,10 +4,12 @@
     --foreground: #f3f3f3;
     --dark: #222e3f;
     /* --highlight: #4893f5; */
+    --highlight-green: #abf0ab;
     --highlight: #3B82F6;
     --highlight-bright: #237ff8f8;
     --highlight-shadow: #2752a8;
     --highlight-fade: #244a7cf8;
+    --highlight-faded: #244a7c9a;
     --portrait-background: #4f535fd0;
     --card-background: #19222e;
     /* --card-background: #222e3f; */
