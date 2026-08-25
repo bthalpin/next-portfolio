@@ -42,6 +42,11 @@
     flex-direction: column;
     gap: 0.5rem;
 }
+
+.footer_contact_button {
+    margin-top: 1rem;
+}
+
 .githubLogo,.linkedInLogo,.emailLink svg{
     height:40px;
     filter: grayscale(1);

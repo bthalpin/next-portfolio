@@ -15,7 +15,9 @@ const Footer = () => {
                     <h4>Let's Connect</h4>
                     <p>I'm always open to discussing new opportunities on interesting projects.</p>
                     
-                    <ContactButton />
+                    <div className={styles.footer_contact_button}>
+                        <ContactButton />
+                    </div>
                 </div>
                 <div className={styles.footerContainer}>
                     <a href="https://github.com/bthalpin">

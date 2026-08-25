@@ -13,7 +13,7 @@
 
 .header {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 24rem;
     justify-content: space-between;
     gap: 1rem;
 }
@@ -78,31 +78,38 @@
 .portrait {
     position: relative;
     height: fit-content;
-    margin-left: .375rem;
+    /* margin-left: .375rem; */
+    /* margin-right: 4rem; */
+
+    /* display: flex;
+    justify-content: flex-end; */
 }
 .portrait img {
-    border-radius: 50%;
+    background-color: var(--card-background);
+    border-radius: 0.5rem;
+    /* border-radius: 50%; */
     overflow: hidden;
-    /* background-color: var(--dark); */
-    background: radial-gradient(closest-side, var(--highlight-fade),var(--highlight-fade),  var(--background));
+    /* background: radial-gradient(closest-side, var(--highlight-fade),var(--highlight-fade),  var(--background)); */
 
-    width: 14rem;
-    height: 14rem;
+    background: linear-gradient(to right, var(--dark) 0%, var(--highlight-fade) 50%, var(--card-background) 90%, transparent 100%);
+    width: 18rem;
+    height: 19.5rem;
     z-index: 1;
     object-fit: contain;
+    object-position: bottom;
 }
-
+/* 
 .portrait::before {
     content: '';
     box-sizing: border-box;
     position: absolute;
     inset: -0.375rem;
-    width: 14.75rem;
-    height: 14.75rem;
+    width: 20.75rem;
+    height: 20.75rem;
     border: 1px solid var(--dark);
-    z-index: -1;
+    z-index: 1;
     border-radius: 50%;
-}
+} */
 
 .header_contact_container {
     display: flex;
@@ -111,8 +118,9 @@
     padding: 1rem 2rem;
     border: 1px solid var(--dark);
     border-radius: 0.5rem;
-    margin-top: 1.75rem;
-    width: 18rem;
+    margin-top: 0.5rem;
+    width: 24rem;
+    /* width: 18rem; */
 
 }
 
@@ -144,6 +152,24 @@
 }
 
 
+@media screen and (max-width: 1440px) {
+    
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .portrait img {
+        width: 16rem;
+        height: 17rem;
+
+    }
+    .portrait::before {
+        width: 14.75rem;
+        height: 14.75rem;
+    }
+}
 @media screen and (max-width:950px) {
     .about_page {
         padding: 3rem 1rem;

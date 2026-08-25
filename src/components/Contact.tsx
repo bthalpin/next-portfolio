@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import styles from '../styles/contact.module.css';
+import styles from '../styles/components/contact.module.css';
 import { sendMailOnServer } from "../actions/mail";
 
 const defaultContact = {
