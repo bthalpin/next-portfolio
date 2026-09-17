@@ -1,13 +1,13 @@
 import SkillCard from './SkillCard';
-import skills from '@/constants/skills'
+import DEFAULTS from '@/constants/DEFAULTS'
 import styles from '@/styles/components/Skill/skillSection.module.css';
 
 type Props = {
-    sectionName:  keyof typeof skills;
+    sectionName:  keyof typeof DEFAULTS.skills;
 }
 
 export default function SkillSection ({ sectionName } : Props) {
-    const skillData = skills[sectionName]
+    const skillData = DEFAULTS.skills[sectionName]
     return (
         <section className={styles.skill_section}>
             <div className={styles.skill_section_header}>

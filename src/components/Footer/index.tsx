@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className={styles.footer_contact}>
                     <h3>HALPIN</h3>
                     <h4>Let's Connect</h4>
-                    <p>I'm always open to discussing new opportunities on interesting projects.</p>
+                    <p>I'm always open to discussing new opportunities or interesting projects.</p>
                     
                     <div className={styles.footer_contact_button}>
                         <ContactButton />

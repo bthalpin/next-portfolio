@@ -1,73 +1,26 @@
-import React from 'react';
-import styles from '@/styles/components/about.module.css';
+import Highlights from '@/components/About/HighLights';
+import AboutSection from '@/components/About/AboutSection';
+import ContactSection from '@/components/About/ContactSection';
 
-function About () {
+import TechnicalSkills from '@/components/About/TechnicalSKills';
+import Career from '@/components/About/Career';
+
+import styles from '@/styles/about.module.css';
+import FeaturedWork from '@/components/About/FeaturedWork';
+
+export default function Page () {
     
     return (
-        <div className={styles.aboutContainer}>
-            <div className={styles.portraitContainer}>
-                <div className={styles.portrait}>
-                    <img src='/images/brian-main-portrait.png' alt="Brian Halpin portrait"></img>
-                </div>
-                
-            </div>
-            <section>
-                    <p className={styles.statement}>Hi, I'm</p> 
-                    <p id={styles.name}>Brian Halpin</p> 
-                    <p className={styles.statement}>
-                        I’m a full-stack web developer specializing in building and maintaining scalable production applications using Next.js, TypeScript, MySQL, and modern cloud infrastructure. I’ve worked across multiple full-featured platforms, contributing both independently and within collaborative teams to deliver reliable, high-quality web applications.
-                    </p>
-                    <p className={styles.statement}>
-                        Most recently, I’ve taken on a Lead Developer role overseeing code quality and production infrastructure across several active projects. I manage and deploy production applications through Vercel, maintain and optimize databases on PlanetScale, and oversee cloud infrastructure including AWS EC2 and S3. I also manage development and staging environments on Heroku and conduct code reviews to ensure consistency, performance, and long-term maintainability across codebases.
-                    </p>    
-                    <p className={styles.statement}>
-                        My experience spans both maintaining complex legacy systems and building new applications from the ground up. I’ve developed custom content management systems, led the development of content-driven websites and admin dashboards, and helped guide projects from planning through deployment and ongoing support.  
-                    </p>    
-                    <p className={styles.statement}>
-                        I’m driven by a strong interest in problem solving, system design, and continuous improvement. I enjoy tackling complex technical challenges, refining existing systems, and building tools that make both products and teams more effective.
+        <div className={styles.about_page}>
+            <section className={styles.header}>
+                <AboutSection />
+                <ContactSection />
+            </section>
 
-                    </p>    
-                    <p className={styles.statement}>
-I earned a Full Stack Web Development certificate from Rutgers University in 2022 and have continued expanding my skill set through hands-on development across modern frameworks, databases, and cloud platforms. Today, I focus on delivering dependable, scalable applications and contributing meaningful technical leadership wherever I work.
-                    </p>    
-                    {/* <p className={styles.statement}>
-                        I'm a web developer, with years of professional experience, specializing in building and maintaining 
-                        full-stack applications using Next.js, TypeScript, and MySQL with Prisma and Sequelize. I've worked 
-                        both independently and as part of a collaborative team, contributing to the development of multiple 
-                        full-featured websites. My work includes maintaining legacy codebases, launching new projects 
-                        from the ground up, and developing a custom content management system to support dynamic site content.
-                        I also led the development of a full-scale content-driven website, as well as an admin dashboard that 
-                        enables seamless content management.
-                    </p>
-                    <p className={styles.statement}>
-                        Since the moment I was exposed to programming, it was all I ever wanted to do.  
-                        I have always had a passion for problem solving, but thought my love of logic 
-                        puzzles would be something I would only ever do as a hobby. Software development 
-                        has given me an avenue to not only do what I love, but also to engage me and 
-                        challenge me to always improve my skills.
-                    </p>    
-                    <p className={styles.statement}>
-                        I earned a certificate in Full Stack Web Development from Rutgers University
-                        back in 2022.  Before starting the program I took it upon myself to learn as 
-                        much as I could, even developing a real time chat application using React, Node, 
-                        Express, Knex, Postgres, and socket.io.  In my time working through the program, 
-                        I was able to hone my skills as a React developer, learn the importance of folder 
-                        structure, and learn new technologies like GraphQL.  One of my most important 
-                        experiences was collaborating with other developers throughout the program, and in some 
-                        instances, using my many years of supervisory experience to help lead the team 
-                        to complete the project effectively and efficiently.  
-                    </p>    
-                    <p className={styles.statement}>
-                        My love of problem solving, my drive to always improve, and my strong collaborative 
-                        skills make me an advantageous candidate for any team.
-
-                    </p>     */}
-
-                </section>
+            <Highlights />
+            <FeaturedWork />
+            <TechnicalSkills />
+            <Career />
         </div>
     )
 }
-
-export default About;
-
-
