@@ -8,6 +8,7 @@ import { FaAws } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
 import styles from '@/styles/about.module.css';
+import DEFAULTS from '@/constants/DEFAULTS';
 
 export default function AboutSection () {
     return (
@@ -28,7 +29,7 @@ export default function AboutSection () {
             </div>
 
 
-            <p className={styles.about_text}>I build and maintain scalable production web applications that solve complex business problems.  Over the past 3+ years, I've taken on increasing responsibility - from junior developer to lead developer - overseeing architecture decisions, production deployments, and code quality across multiple live applications.</p>
+            <p className={styles.about_text}>I build and maintain scalable production web applications that solve complex business problems.  Over the past {DEFAULTS.yearsOfExperience}+ years, I've taken on increasing responsibility - from junior developer to lead developer - overseeing architecture decisions, production deployments, and code quality across multiple live applications.</p>
         
             <div className={styles.header_button_container}>
                 <Link href={'/work'}>

@@ -9,6 +9,7 @@ import styles from '@/styles/about.module.css';
 import FeaturedWork from '@/components/About/FeaturedWork';
 
 export default function Page () {
+    
     return (
         <div className={styles.about_page}>
             <section className={styles.header}>
