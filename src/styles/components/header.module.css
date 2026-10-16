@@ -1,6 +1,6 @@
 .navWrapper {
     background-color: var(--dark);
-    border-bottom:1px solid var(--highlight);
+    border-bottom: 1px solid var(--highlight);
 }
 .navContainer {
     display:flex;
@@ -31,17 +31,48 @@
     text-decoration: none;
     color:white;
     cursor: pointer;
+    position: relative;
 }
-.navLink:hover{
-    color:rgb(241, 241, 241);
-    text-shadow: 0 0 0.5rem white;
+.navLink::after {
+    content: '';
+    width: calc(100% + 20px);
+    width: 0;
+    height: 4px;
+    background-color: var(--highlight);
+    background: linear-gradient(to top, var(--highlight));
+    bottom: -0px;
+    left: 50%;
+    position: absolute;
+    transition: opacity 0.8s ease, width 0.3s ease,  left 0.3s ease;
+    opacity: 0;
+}
+.navLink:hover::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
 }
 
 .selected{
     color:white;
-    background-color: var(--highlight-fade);
-    /* border-bottom:1px solid var(--highlight); */
-
+    /* color: var(--highlight); */
+    /* background-color: var(--highlight-fade); */
+    position: relative;
+    overflow: hidden;
+}
+.selected::after {
+    content: '';
+    width: calc(100% + 20px);
+    width: 100%;
+    height: 4px;
+    background-color: var(--highlight);
+    /* background: linear-gradient(to top, var(--highlight), transparent, transparent); */
+    /* background: linear-gradient(to top, var(--highlight), transparent, transparent); */
+    /* background: radial-gradient(var(--highlight),var(--highlight-fade),transparent, transparent);; */
+    bottom: -0px;
+    left: -0;
+    position: absolute;
+    border-radius: -20px -20px 0 0;
+    opacity: 1;width: 100%;
 }
 .navLink,.selected:hover{
     text-shadow: none;

@@ -1,6 +1,6 @@
 export const navigationLinks: { name: string, link: string } [] = [
-    { name: 'About Me', link: '/' },
-    { name: 'Portfolio', link: '/portfolio' },
-    // { name: 'Contact', link: '/contact-me' },
-    { name: 'Resume', link: '/resume' },
+    { name: 'About', link: '/' },
+    { name: 'Work', link: '/work' },
+    { name: 'Skills', link: '/skills' },
+    { name: 'Contact', link: '/contact' },
 ]
