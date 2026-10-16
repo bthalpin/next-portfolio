@@ -65,7 +65,7 @@
     border-radius: 5px;
     border: 1px solid var(--highlight-fade);
     display: grid;
-    grid-template-columns: 2rem 1fr 220px;
+    grid-template-columns: 2rem 1fr;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
