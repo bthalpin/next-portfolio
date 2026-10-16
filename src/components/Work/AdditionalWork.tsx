@@ -2,9 +2,13 @@ import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { CiCloudOn } from "react-icons/ci";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { GrDocumentStore } from "react-icons/gr";
+import { MdDashboardCustomize } from "react-icons/md";
+import { FaNetworkWired } from "react-icons/fa";
 
 import styles from '../../styles/components/Work/work.module.css';
 import Link from "next/link";
+import { FaFileInvoiceDollar } from "react-icons/fa6";
 
 export default function AdditionalWork () {
     return (
@@ -46,7 +50,7 @@ export default function AdditionalWork () {
 
 const workData = [
     {
-        headerIcon: <FaRegCheckCircle color={'#2160d4'}/>,
+        headerIcon: <GrDocumentStore color={'#2160d4'}/>,
         backgroundColor: '#2160d4',
         header: 'Content Management System',
         description: 'A subscription management platform handling payments, billing, and customer management for multiple brands.',
@@ -59,7 +63,7 @@ const workData = [
         ]
     },
     {
-        headerIcon: <FaRegCheckCircle color={'#4b3685'}/>,
+        headerIcon: <FaFileInvoiceDollar color={'#4b3685'}/>,
         backgroundColor: '#4b3685',
         header: 'Marketing Automation Platform',
         description: 'Platform for dental professionals to access courses, live events, and certifications',
@@ -72,27 +76,27 @@ const workData = [
         ]
     },
     {
-        headerIcon: <FaRegCheckCircle color={'#253f25'}/>,
+        headerIcon: <MdDashboardCustomize color={'#253f25'}/>,
         backgroundColor: '#253f25',
-        header: 'Internal Admin Dashboard',
+        header: 'AI-Powered Evaluation Assistant',
         description: 'AI-powered helping companies evaluate manufacturers using conversational search and semantic understanding',
         technology: [
             'Next.js',
-            'TypeScript',
+            // 'TypeScript',
             'PostgresSQL',
             // 'Claude AI',
-            // 'Vercel AI SDK'
+            'Vercel AI SDK'
         ]
     },
     {
-        headerIcon: <FaRegCheckCircle color={'#253f25'}/>,
-        backgroundColor: '#253f25',
+        headerIcon: <FaNetworkWired color={'#2160d4'}/>,
+        backgroundColor: '#2160d4',
         header: 'API & Integration Services',
-        description: 'AI-powered helping companies evaluate manufacturers using conversational search and semantic understanding',
+        description: 'Custom APIs and third-party integrations connecting platforms, services, and data',
         technology: [
-            'Next.js',
-            'TypeScript',
-            'PostgresSQL',
+            'Hubspot API',
+            'Stripe API',
+            'AWS',
             // 'Claude AI',
             // 'Vercel AI SDK'
         ]

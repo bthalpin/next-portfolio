@@ -1,8 +1,8 @@
-import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
-import { CiCloudOn } from "react-icons/ci";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { RxPeople } from "react-icons/rx";
 import { GoRocket } from "react-icons/go";
+import { LuGraduationCap } from "react-icons/lu";
+import { LuChartNoAxesCombined } from "react-icons/lu";
 
 import styles from '../../styles/components/About/career.module.css';
 
@@ -34,19 +34,19 @@ const hightLightData = [
         header: '2022',
         sub_header: 'Junior Developer',
         description: 'Began my career after earning my Full Stack Web Development certificate from Rutgers Coding Bootcamp.',
-        icon: <HiOutlineSquare3Stack3D />
+        icon: <LuGraduationCap />
     },
     {
         header: '2022 - 2023',
         sub_header: 'Building & Learning',
         description: 'Built and maintained web applications while expanding my skills across the full stack.',
-        icon: <CiCloudOn />
+        icon: <IoCodeSlashOutline />
     },
     {
         header: '2023 - 2025',
         sub_header: 'Growing Responsibility',
         description: 'Became the primary developer on multiple projects and took on more complex architecture decisions.',
-        icon: <IoCodeSlashOutline  />
+        icon: <LuChartNoAxesCombined  />
     },
     {
         header: '2025 - Present',

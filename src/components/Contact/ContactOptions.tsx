@@ -1,6 +1,8 @@
 import styles from '@/styles/contact.module.css';
 import { MdOutlineMail } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { GrDocumentText } from "react-icons/gr";
+
 import Link from 'next/link';
 export default function ContactOptions () {
     return (
@@ -43,7 +45,7 @@ const contactData = [
     {
         header: 'Resume',
         description: 'Download PDF',
-        icon: <img className={styles.githubLogo} src="/images/github-logo.png" alt="GitHub Logo"></img>,
+        icon: <GrDocumentText />,
         link: '/documents/Brian-Halpin-Resume.pdf'
     },
 ]

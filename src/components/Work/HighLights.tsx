@@ -1,8 +1,8 @@
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { CiCloudOn } from "react-icons/ci";
 import { IoCodeSlashOutline } from "react-icons/io5";
-import { RxPeople } from "react-icons/rx";
 import { GoRocket } from "react-icons/go";
+import { RxPeople } from "react-icons/rx";
 
 import styles from '../../styles/components/Work/highlights.module.css';
 import DEFAULTS from "@/constants/DEFAULTS";
@@ -37,7 +37,7 @@ const hightLightData = [
     {
         header: '10k +',
         sub_header: 'Users Served',
-        icon: <CiCloudOn />
+        icon: <RxPeople />
     },
     {
         header: '15+',
@@ -47,6 +47,6 @@ const hightLightData = [
     {
         header: `${DEFAULTS.yearsOfExperience} +`,
         sub_header: 'Years of Experience',
-        icon: <RxPeople  />
+        icon: <CiCloudOn  />
     },
 ]

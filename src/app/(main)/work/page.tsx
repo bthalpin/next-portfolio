@@ -2,6 +2,7 @@ import AdditionalWork from '@/components/Work/AdditionalWork';
 import FeaturedWork from '@/components/Work/FeaturedWork';
 import Highlights from '@/components/Work/HighLights';
 import { CiCloudOn } from "react-icons/ci";
+import { HiOutlineLightBulb } from "react-icons/hi";
 
 import styles from '@/styles/work.module.css';
 import ContactButton from '@/components/ContactButton';
@@ -29,7 +30,7 @@ export default function Page () {
             <AdditionalWork />
 
             <div className={styles.work_disclaimer}>
-                <CiCloudOn />
+                <HiOutlineLightBulb />
                 <div>
                     <p>All projects are proprietary and can't be shared publicly.</p>
                     <p>I'm happy to discuss additional work and responsibilities in more detail.</p>

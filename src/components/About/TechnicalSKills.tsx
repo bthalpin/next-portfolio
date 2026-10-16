@@ -1,5 +1,8 @@
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { CiCloudOn } from "react-icons/ci";
+import { IoSettingsOutline } from "react-icons/io5";
+import { FiMonitor } from "react-icons/fi";
+import { LuDatabase } from "react-icons/lu";
 
 import styles from '../../styles/components/About/skills.module.css';
 
@@ -32,7 +35,7 @@ export default function TechnicalSkills () {
 const skillData = [
     {
         header: 'Frontend',
-        icon: <HiOutlineSquare3Stack3D />,
+        icon: <FiMonitor />,
         skills: [
             'Next.js',
             'React',
@@ -40,28 +43,29 @@ const skillData = [
             'Redux',
             'HTML5',
             'CSS3',
+            'Redux Toolkit',
         ]
     },
     {
         header: 'Backend',
-        icon: <HiOutlineSquare3Stack3D />,
+        icon: <IoSettingsOutline />,
         skills: [
             'Node.js',
             'Express',
-            'Prisma',
-            'Sequelize',
             'REST APIs',
+            'JWT / Auth',
             'WebSockets',
         ]
     },
     {
-        header: 'Databases',
-        icon: <HiOutlineSquare3Stack3D />,
+        header: 'Databases & ORM',
+        icon: <LuDatabase />,
         skills: [
             'MySQL',
             'PostgresSQL',
             'PlanetScale',
-            'Prisma ORM',
+            'Sequelize',
+            'Prisma',
         ]
     },
     {
