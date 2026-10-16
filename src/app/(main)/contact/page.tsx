@@ -4,6 +4,7 @@ import ContactSection from '@/components/About/ContactSection';
 
 import TechnicalSkills from '@/components/About/TechnicalSKills';
 import Career from '@/components/About/Career';
+import { IoIosTimer } from "react-icons/io";
 
 import styles from '@/styles/contact.module.css';
 import FeaturedWork from '@/components/About/FeaturedWork';
@@ -55,7 +56,7 @@ export default function Page () {
                         <div className={styles.contact_availability_container_bottom_card}>
                             <p>Response Time</p>
                             <div className={styles.contact_availability_timing}>
-                                <MdOutlineMail />
+                                <IoIosTimer />
                                 <p>Usually within 24 hours</p>
                             </div>
                         </div>

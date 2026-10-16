@@ -81,7 +81,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   min-height: 100vh;
   margin: 0 auto;
   /* box-shadow: 0 0 15rem var(--highlight-fade); */
@@ -141,6 +141,7 @@ a {
     width: 100%;
     margin-top: 5px;
     background-color: #2F3B52;
+    color: #fff;
 }
 
 .input_container input::placeholder, .input_container textarea::placeholder {

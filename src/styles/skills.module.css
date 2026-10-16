@@ -60,6 +60,27 @@
     width: 2rem;
     height: 2rem;
 }
+.work_future {
+    background-color: var(--card-background);
+    border-radius: 5px;
+    border: 1px solid var(--highlight-fade);
+    display: grid;
+    grid-template-columns: 2rem 1fr 220px;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 1rem 0;
+    font-weight: 500;
+}
+
+.work_future svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--highlight);
+}
+.work_future span {
+    color: var(--highlight);
+}
 
 @media screen and (max-width: 1050px) {
     .skills_page {

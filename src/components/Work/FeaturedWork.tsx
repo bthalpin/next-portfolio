@@ -2,6 +2,8 @@ import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { CiCloudOn } from "react-icons/ci";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { LuGraduationCap } from "react-icons/lu";
+import { IoIosCloudOutline } from "react-icons/io";
 
 import styles from '../../styles/components/Work/work.module.css';
 import Link from "next/link";
@@ -66,7 +68,7 @@ export default function FeaturedWork () {
 
 const workData = [
     {
-        headerIcon: <FaRegCheckCircle />,
+        headerIcon: <HiOutlineSquare3Stack3D />,
         iconBackground: '#2160d4',
         header: 'Enterprise Subscription Platform',
         subHeader: 'A subscription management platform handling payments, billing, and customer management for multiple brands.',
@@ -90,7 +92,7 @@ const workData = [
         ]
     },
     {
-        headerIcon: <FaRegCheckCircle />,
+        headerIcon: <LuGraduationCap />,
         iconBackground: '#4b3685',
         header: 'Continuing Education Platform',
         image: '/images/project_placeholder.png',
@@ -115,7 +117,7 @@ const workData = [
         ]
     },
     {
-        headerIcon: <FaRegCheckCircle />,
+        headerIcon: <IoIosCloudOutline />,
         iconBackground: '#253f25',
         header: 'AI Manufacturer Evaluation Platform',
         image: '/images/project_placeholder.png',

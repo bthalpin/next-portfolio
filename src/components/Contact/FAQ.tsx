@@ -43,18 +43,18 @@ export default function FAQ () {
 const faqData = [
     {
         question: 'Can I see examples of your code?',
-        answer: 'Sure' 
+        answer: 'Yes! You can explore my GitHub for code samples and personal projects. My professional work is confidential.' 
     },
     {
         question: 'Are you open to remote work',
-        answer: 'Yes' 
+        answer: 'Yes! I’m open to remote opportunities and flexible work arrangements.' 
     },
     {
         question: 'Do you provide references',
-        answer: 'Yes' 
+        answer: 'Yes, professional references are available upon request.' 
     },
     {
         question: 'What types of projects interest you most',
-        answer: 'Yes' 
+        answer: 'I enjoy building scalable web applications, backend systems, and integrations that solve real-world problems.' 
     },
 ]

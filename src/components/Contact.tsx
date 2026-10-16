@@ -37,7 +37,11 @@ export default function Contact ({ open, setOpen }: Props) {
 
         return () => {
             setContact({ ...defaultContact });
-            setSuccess(false);
+            
+            setTimeout(() => {
+                setSuccess(false);
+                setSending(false);
+            }, 1000)
         }
     }, [open])
 
@@ -78,10 +82,10 @@ export default function Contact ({ open, setOpen }: Props) {
     
             setSending(true)
             const mailData = {
-                subject: 'Contact form submission from cahlycreations.com',
+                subject: 'Contact form submission from bthalpin.com',
                 html: `
-                    <p>Claudia,<p>
-                    <p>You have received a message from the contact form on cahlycreations.com<p>
+                    <p>Brian,<p>
+                    <p>You have received a message from the contact form on bthalpin.com<p>
                     ${contact.name ? `<p>Name: ${contact.name}</p>` : ''}
                     <p>Email: ${contact.email}</p>
                     <p>Message: ${contact.message}</p>
@@ -149,7 +153,7 @@ export default function Contact ({ open, setOpen }: Props) {
                     : 
                     <div className={styles.success_message}>
                         <h2>Thank you for reaching out!</h2>
-                        <p>I'm excited to learn more about your custom banner. I'll review your message and respond as soon as I can.</p>
+                        <p>I'll review your message and respond as soon as I can.</p>
                     </div>
                 }
 
