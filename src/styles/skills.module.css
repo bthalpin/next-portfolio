@@ -3,6 +3,14 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 3rem 2rem;
+
+    background-image: 
+    linear-gradient(to right, var(--background) 0%, transparent 80%),
+    linear-gradient(to top, var(--background) 0%, transparent 40%),
+    url(/images/abstract_background2.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 1000px;
 }
 .skills_header_section {
     display: grid;
@@ -85,6 +93,11 @@
 @media screen and (max-width: 1050px) {
     .skills_page {
         padding: 3rem 1rem;
+
+        background-image: 
+        linear-gradient(to right, var(--background) 0%, var(--background) 50%, transparent 90%),
+        linear-gradient(to top, var(--background) 0%, var(--background) 50%, transparent 90%),
+        url(/images/abstract_background2.png);
     }
 }
 

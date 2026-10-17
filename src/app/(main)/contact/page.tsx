@@ -33,9 +33,9 @@ export default function Page () {
         
                 </div>
 
-                <div className={styles.portrait}>
+                {/* <div className={styles.portrait}>
                     <img src='/images/brian-main-portrait.png' alt="Brian Halpin portrait"></img>
-                </div>
+                </div> */}
 
             </section>
 

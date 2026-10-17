@@ -14,7 +14,7 @@ export default function Page () {
                     <p>The technologies below represent the tools I use to build, deploy, and maintain scalable production applications.</p>
                 </div>
 
-                <div className={styles.skills_info}>
+                {/* <div className={styles.skills_info}>
                     
                         <div className={styles.career_icon_container}>
 
@@ -26,7 +26,7 @@ export default function Page () {
                         <p>These are the technologies I use daily to build and ship production applications.</p>
 
                     </div>
-                </div>
+                </div> */}
             </section>
 
             <SkillSection sectionName="FRONTEND"/>
