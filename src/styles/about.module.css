@@ -2,6 +2,20 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 3rem 2rem;
+
+
+    
+    
+    background-image: 
+    linear-gradient(to right, var(--background) 0%, transparent 80%),
+    linear-gradient(to top, var(--background) 0%, transparent 40%),
+    url(/images/abstract_background2.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 1000px;
+
+    position: relative;
+
 }
 
 .about_section {
@@ -9,6 +23,8 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 0.3rem;
+
+    position: relative;
 }
 
 .header {
@@ -16,8 +32,20 @@
     grid-template-columns: 2fr 24rem;
     justify-content: space-between;
     gap: 1rem;
-}
 
+    position: relative;
+
+}
+/* .header::before {
+    position: absolute;
+    content:'';
+    width: 70%;
+    height: 150%;
+    background: radial-gradient(circle at top right,  transparent, transparent, red);
+    bottom: 0;
+    right: 0;
+
+} */
 .header_top_text {
     font-size: 1.5rem;
     line-height: 0.5rem;
@@ -123,6 +151,16 @@
   );
 }
 
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    position: relative;
+
+}
 .header_contact_container {
     display: flex;
     flex-direction: column;
@@ -132,6 +170,7 @@
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     width: 24rem;
+    background-color: var(--card-background);
     /* width: 18rem; */
 
 }
@@ -182,18 +221,27 @@
         height: 14.75rem;
     }
 }
-@media screen and (max-width:950px) {
+
+@media screen and (max-width: 1200px) {
+    
+    .header_contact_container {
+        width: fit-content;
+    }
+}
+@media screen and (max-width:1000px) {
     .about_page {
         padding: 3rem 1rem;
+
+        background-image: 
+        linear-gradient(to right, var(--background) 0%, var(--background) 50%, transparent 90%),
+        linear-gradient(to top, var(--background) 0%, var(--background) 50%, transparent 90%),
+        url(/images/abstract_background2.png);
     }
 
     .header {
         gap: 1rem;
         /* flex-direction: column-reverse; */
     }
-     .header_contact_container {
-        width: fit-content;
-     }
      .header_icon_container svg {
         width: 40px;
         height: 40px;
@@ -224,7 +272,7 @@
         height: 12.75rem;
     }
     .about_section {
-        margin-top: 14rem;
+        margin-top: 2rem;
     }
 }
 

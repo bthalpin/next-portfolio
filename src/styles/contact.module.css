@@ -2,6 +2,17 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 3rem 2rem;
+
+    
+    background-image: 
+    linear-gradient(to right, var(--background) 0%, transparent 80%),
+    linear-gradient(to top, var(--background) 0%, transparent 40%),
+    url(/images/abstract_background2.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 1000px;
+
+    position: relative;
 }
 
 .contact_section {
@@ -75,6 +86,9 @@
   );
 }
 
+.contact_get_in_touch {
+    margin-top: 3rem;
+}
 .contact_get_in_touch > p:first-child {
     font-size: 2rem;
     font-weight: 500;
@@ -315,6 +329,12 @@
 @media screen and (max-width:950px) {
     .contact_page {
         padding: 3rem 1rem;
+
+
+        background-image: 
+        linear-gradient(to right, var(--background) 0%, var(--background) 50%, transparent 90%),
+        linear-gradient(to top, var(--background) 0%, var(--background) 50%, transparent 90%),
+        url(/images/abstract_background2.png);
     }
 
     .header {
@@ -359,7 +379,7 @@
         height: 12rem;
     }
     .contact_section {
-        margin-top: 14rem;
+        margin-top: 3rem;
     }
     
     .faq_section {
@@ -376,6 +396,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .contact_section {
+        margin-top: 1rem;
+    }
     .header_name {
         font-size: 3rem;
         line-height: 3rem;
@@ -384,6 +407,10 @@
     .get_in_touch_card {
         display: flex;
         gap: 3rem;
+    }
+    
+    .get_in_touch_text p:first-child {
+        font-size: 1.5rem;
     }
     .get_in_touch_arrow {
         display: none;
