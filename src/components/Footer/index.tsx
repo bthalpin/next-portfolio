@@ -20,13 +20,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={styles.footerContainer}>
-                    <a href="https://github.com/bthalpin">
+                    <a href="https://github.com/bthalpin" target='_blank'>
                         <img className={styles.githubLogo} src="/images/github-logo.png" alt="GitHub Logo"></img> 
                     </a>
-                    <a href="https://www.linkedin.com/in/brian-halpin/">
+                    <a href="https://linkedin.com/in/bthalpin/" target='_blank'>
                         <img className={styles.linkedInLogo} src="/images/linkedin-logo.png" alt="LinkedIn Logo"></img> 
                     </a>
-                    <a href="mailto:brian@bthalpin.com" className={styles.emailLink}>
+                    <a href="mailto:brian@bthalpin.com" className={styles.emailLink} target='_blank'>
                         <MdOutlineMail   />
                         {/* <img className={styles.emailLink} src="/icons/mail_icon.png" alt="Email icon"></img>  */}
                     </a>

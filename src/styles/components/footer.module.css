@@ -59,7 +59,7 @@
 @media screen and (max-width: 1000px) {
     .footer_container {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
     }
     .footer_contact {
@@ -70,6 +70,9 @@
         border-bottom: 1px solid #ffffff1e;
         width: 100%;
         padding-bottom: 0.75rem;
+    }
+    .footer_contact_button {
+        margin-top: 1.5rem;
     }
     .githubLogo,.linkedInLogo,.emailLink svg{
         height: 30px;
