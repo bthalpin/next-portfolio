@@ -12,19 +12,19 @@ export default function ContactSection () {
             </div> */}
 
             <div className={styles.header_contact_container}>
-                <a href={'mailto:brian@bthalpin.com'}>
+                <a href={'mailto:brian@bthalpin.com'} target={'_blank'}>
                     <MdOutlineMail />
                     <p>brian@bthalpin.com</p>
                 </a>
 
-                <a href={'mailto:brian@bthalpin.com'}>
+                <a href={'https://linkedin.com/in/bthalpin/'} target={'_blank'}>
                     
                     <img className={styles.linkedInLogo} src="/images/linkedin-logo.png" alt="LinkedIn Logo"></img> 
                     <p>LinkedIn</p>
 
                 </a>
 
-                <a href={'mailto:brian@bthalpin.com'}>
+                <a href={'"https://github.com/bthalpin'} target={'_blank'}>
                     
                     <img className={styles.githubLogo} src="/images/github-logo.png" alt="GitHub Logo"></img> 
                     <p>GitHub</p>

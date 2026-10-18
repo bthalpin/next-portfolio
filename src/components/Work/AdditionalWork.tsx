@@ -63,8 +63,8 @@ const workData = [
         ]
     },
     {
-        headerIcon: <FaFileInvoiceDollar color={'#4b3685'}/>,
-        backgroundColor: '#4b3685',
+        headerIcon: <FaFileInvoiceDollar color={'#5b42a1'}/>,
+        backgroundColor: '#5b42a1',
         header: 'Marketing Automation Platform',
         description: 'Platform for dental professionals to access courses, live events, and certifications',
         technology: [
@@ -76,8 +76,8 @@ const workData = [
         ]
     },
     {
-        headerIcon: <MdDashboardCustomize color={'#253f25'}/>,
-        backgroundColor: '#253f25',
+        headerIcon: <MdDashboardCustomize color={'#437243'}/>,
+        backgroundColor: '#437243',
         header: 'AI-Powered Evaluation Assistant',
         description: 'AI-powered helping companies evaluate manufacturers using conversational search and semantic understanding',
         technology: [

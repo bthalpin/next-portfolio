@@ -129,7 +129,7 @@ export default function Contact ({ open, setOpen }: Props) {
                 {!success ?
                     <>
                         <h2>Let's Connect</h2>
-                        <p className={styles.contact_message}>Interested in working together? Whether you're hiring for a full-time role, contract work, or simply have a question, I'd love to hear from you. I typically respond within one business day.</p>
+                        <p className={styles.contact_message}>Interested in working together? Whether you're hiring for a full-time role, contract work, or simply have a question, I'd love to hear from you. I typically respond within 24 hours.</p>
 
                         <div className={'input_container'}>
                             <label>Name</label>
